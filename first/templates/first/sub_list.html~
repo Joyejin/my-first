@@ -1,9 +1,18 @@
 <html>
 	<head>
 		<title> first </title>
+		
 	</head>
 
 <body>
-	<p> Hello World </p>
+	
+
+	{% for sub in subs %}
+	<div> 
+		<p>호선:{{ sub.num }}</p>
+		<p>무슨역:{{ sub.name }}</p>
+		<p>내 위치:{{ sub.my }}</p>
+	</div>
+	{% endfor %}
 <body>
 </html>
